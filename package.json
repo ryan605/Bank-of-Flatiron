@@ -1,0 +1,19 @@
+{
+  "name": "bank-of-flatiron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryan605/Bank-of-Flatiron.git"
+  },
+  "author": "Ryan Langat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryan605/Bank-of-Flatiron/issues"
+  },
+  "homepage": "https://github.com/ryan605/Bank-of-Flatiron#readme"
+}
