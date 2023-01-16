@@ -1,4 +1,4 @@
-export default function TransactionItem({date, description, category, amount})
+export default function TransactionItem({date, description, category, amount}){
 return(
 
     <tr>
@@ -8,3 +8,4 @@ return(
         <td>{amount}</td>
     </tr>
 )
+}
