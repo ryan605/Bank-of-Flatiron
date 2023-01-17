@@ -1,14 +1,13 @@
 import './App.css';
 import React, {useEffect,useState} from 'react';
-import Transactions from './components/Transactions';
-import NewItemForm from './components/NewItemForm';
-import SearchForm from './components/SearchForm';
-​
-​
+import Transaction from './Component/Transaction';
+import NewItemForm from './Component/NewItemForm';
+import SearchForm from './Component/SearchForm';
+
 function App() {
   const[transactions, setTransactions]= useState([])
 useEffect(()=>{
-  fetch("http://localhost:6001/transactions")
+  fetch("https://my-json-server.typicode.com/ryan605/Bank-of-Flatiron/transactions")
   .then(r=>r.json())
   .then(transc=>setTransactions(transc))
 },[])
@@ -23,7 +22,7 @@ function handleUpdateOnSubmission(newTransaction){
     },
     body:JSON.stringify(newTransaction)
   }
-fetch("http://localhost:6001/transactions",serverOption)
+fetch("https://my-json-server.typicode.com/ryan605/Bank-of-Flatiron/transactions",serverOption)
 .then(r=>r.json())
 .then(newItem=>console.log(newItem))
 }
@@ -34,11 +33,9 @@ fetch("http://localhost:6001/transactions",serverOption)
       </div>
       <SearchForm/>
       <NewItemForm onSubmission={handleUpdateOnSubmission}/>
-        <Transactions transactions={transactions}/>
+        <Transaction transactions={transactions}/>
        
-​
     </div>
   );
 }
-​
 export default App;

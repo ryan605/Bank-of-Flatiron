@@ -1,23 +1,25 @@
 import { useState } from "react"
-​
+
 export default function NewItemForm({onSubmission}) {
     const[formData,setFormData]=useState({
         date:"",
         category:"",
         amount:0,
         description:""
-​
-})
-​
-    function handleChange(e){
+
+
+}
+)
+
+   function handleChange(e){
         setFormData({...formData,[e.target.name]:e.target.value})
     }
-​
+
     function handleSubmit(e){
         e.preventDefault()
         onSubmission(formData)
     }
-​
+
     return (
         <form onChange={handleChange} onSubmit={handleSubmit} id="new-item-form">
             <div className="form-inputs">

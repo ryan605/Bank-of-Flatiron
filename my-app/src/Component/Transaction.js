@@ -1,6 +1,6 @@
 import TransactionItem from "./TransactionItem"
 
-export default function Transactions({transactions}){
+export default function Transaction({transactions}){
 
     return(
 
