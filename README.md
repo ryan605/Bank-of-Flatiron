@@ -1,4 +1,3 @@
-# Bank-of-Flatiron
 # BANK OF FLATIRON
 
 This project has extensively used:
