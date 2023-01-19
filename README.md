@@ -12,11 +12,20 @@ This project has extensively used:
 
 PROJECT SETUP
 
-Follow the following steps
+Follow the following steps:
 
 Clone the repo
 
     git@github.com:ryan605/Bank-of-Flatiron.git
+    
+Project informaton:
+live server link:  https://gilded-paprenjak-d77120.netlify.app/
+
+The following web app,as a user you can :
+ 
+ -See a table of all transactions.
+ -Fill out and submit the form to add a new transaction. This should add the new transaction to the table *the new transaction does not have to be persisted to the backend*
+-Filter transactions by typing into the search bar. Only transactions with a description matching the search term should be shown in the transactions table.
     
 # Getting Started with Create React App
 
