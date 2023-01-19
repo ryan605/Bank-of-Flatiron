@@ -7,7 +7,7 @@ import SearchForm from './Component/SearchForm';
 function App() {
   const[transactions, setTransactions]= useState([])
 useEffect(()=>{
-  fetch("https://my-json-server.typicode.com/ryan605/Bank-of-Flatiron/transactions")
+  fetch("https://my-json-server.typicode.com/ryan605/json/transactions")
   .then(r=>r.json())
   .then(transc=>setTransactions(transc))
 },[])
@@ -22,7 +22,7 @@ function handleUpdateOnSubmission(newTransaction){
     },
     body:JSON.stringify(newTransaction)
   }
-fetch("https://my-json-server.typicode.com/ryan605/Bank-of-Flatiron/transactions",serverOption)
+fetch("https://my-json-server.typicode.com/ryan605/json/transactions",serverOption)
 .then(r=>r.json())
 .then(newItem=>console.log(newItem))
 }

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch db.json",
+    "start": "https://my-json-server.typicode.com/ryan605/json/transactions",
     "test": "npm start"
   },
   "repository": {
